@@ -1,0 +1,35 @@
+body {
+	background-color: darkgrey;
+}
+
+.top_bar {
+	border-bottom: 1px solid black;
+}
+
+.square {
+	width: 200px;
+	height: 200px;
+	float: left;
+	text-align: center;
+	padding-top: 70px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	background-color: lightgrey;
+	margin: 15px;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.square.active {
+	border-width: 3px;
+	border-color: rgb(0,200,0);
+	background-color: rgb(200,230,200);
+	color: rgb(0,200,0);
+}
+
+.square.complete {
+	border-width: 3px;
+	border-color: rgb(0,200,0);
+	background-color: rgb(150,250,150);
+	color: rgb(0,200,0);
+}

@@ -1,4 +1,4 @@
-let sample_order = {
+var sample_order = {
 	'order_id': '154658974514',
 	'products': [
 		{
@@ -9,7 +9,7 @@ let sample_order = {
 	]
 };
 
-$(document).ready(function(){
+$(document).ready(function () {
 	console.log('doc ready');
 	$(".order-id").html(sample_order.order_id);
 	$(".products-total").html(sample_order.products.length);

@@ -2,58 +2,78 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Pack Station</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+    <title>Pack Station</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="styles.css?v=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
 <body>
-	<div class="top_bar">
-		<input type="text" id="user_input" name="user_input" class=""/>
-	</div>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<form class="form-inline">
+						<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="">
+				</form>
 
-	<div class="squares">
-		<div class="square complete">C</div>
-		<div class="square complete">B</div>
-		<div class="square active">Z</div>
-		<div class="square">D</div>
-		<div class="square">X</div>
-	</div>
+				<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+								<a class="nav-link disabled" href="#">UserName</a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" href="#">Logout</a>
+						</li>
+				</ul>
+		</nav>
 
-	<div class="order-info_bar">
-		Order id: <span class="order-id">0</span>, 
-		Products: <span class="products-scanned">0</span>/<span class="products-total">0</span>,
-		Optimal carrier: <span class="optimal-carrier">none</span>,
-		Selected carrier: <span class="selected-carrier">none</span>
-	</div>
-
-	<div class="products">
-		<div class="product">
-			<span class="product-name">
-				Nameasdasdadadas
-			</span>
-			<br/>
-			<span class="product-type">
-				Type
-			</span>
+		<div class="container-fluid mt-3 mb-3">
+    <div class="card-deck">
+      <div id="card-assembly" class="card text-center bg-light text-black" style="width: 10rem;">
+        <div class="card-body">
+          <h1 class="card-title display-1">A</h1>
+          <p class="card-text">Assembly</p>
+        </div>
+				  </div>
+      <div id="card-collect" class="card text-center bg-light" style="width: 10rem;">
+        <div class="card-body">
+          <h1 class="card-title display-1">C</h1>
+          <p class="card-text">Collect</p>
+        </div>
+				  </div>
+      <div id="card-bill" class="card text-center bg-light" style="width: 10rem;">
+        <div class="card-body">
+          <h1 class="card-title display-1">R</h1>
+          <p class="card-text">Bill</p>
+        </div>
+				  </div>
+      <div id="card-box" class="card text-center bg-light" style="width: 10rem;">
+        <div class="card-body">
+          <h1 class="card-title display-1">B</h1>
+          <p class="card-text">Box</p>
+        </div>
+				  </div>
+      <div id="card-delivery" class="card text-center bg-light" style="width: 10rem;">
+        <div class="card-body">
+          <h1 class="card-title display-1">D</h1>
+          <p class="card-text">Delivery</p>
+        </div>
+				  </div>
+      <div id="card-close" class="card text-center bg-light" style="width: 10rem;">
+        <div class="card-body">
+          <h1 class="card-title display-1">X</h1>
+          <p class="card-text">Close</p>
+        </div>
+				  </div>
+    </div>
 		</div>
-		<div class="product scanned">
-			<span class="product-name">
-				Nameasdasdadadas
-			</span>
-			<br/>
-			<span class="product-type">
-				Type
-			</span>
-		</div>
-	</div>
-
-	<script src="jquery-3.4.1.js"></script>
- 	<script src="script.js"></script>
+    
+	<script src="js/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/assembly.js"></script>
 </body>
 </html>

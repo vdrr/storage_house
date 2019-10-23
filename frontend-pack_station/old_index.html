@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Pack Station</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+	<div class="top_bar">
+		<input type="text" id="user_input" name="user_input" class=""/>
+	</div>
+
+	<div class="squares">
+		<div class="square complete">
+      <div class="letter">A</div>
+      <div class="under-letter">Assembly</div>
+    </div>
+		<div class="square complete">
+			<div class="letter">C</div>
+      <div class="under-letter">Collect</div>
+		</div>
+		<div class="square active">
+			<div class="letter">R</div>
+      <div class="under-letter">Bill</div>
+		</div>
+		<div class="square">
+			<div class="letter">B</div>
+      <div class="under-letter">Box</div>
+		</div>
+		<div class="square">
+			<div class="letter">D</div>
+      <div class="under-letter">Delivery</div>
+		</div>
+		<div class="square">
+			<div class="letter">X</div>
+      <div class="under-letter">Close</div>
+		</div>
+	</div>
+
+	<div class="order-info_bar">
+		<div class="order-info_square">
+			Order No.: <span class="order-id">0</span>
+		</div>
+		<div class="order-info_square">
+			Products: <span class="products-scanned">0</span>/<span class="products-total">0</span>
+		</div>
+		<div class="order-info_square">
+			Country: <span class="country">null</span>
+		</div>
+		<div class="order-info_square">
+			Weight: <span class="weight">0</span>
+		</div>
+		<div class="order-info_square">
+			Optimal carrier: <span class="optimal-carrier">none</span>
+		</div>
+		<div class="order-info_square">
+			Carrier: <span class="selected-carrier">none</span>
+		</div>
+	</div>
+
+	<div class="products">
+		<div class="product">
+			<span class="product-name">
+				Nameasdasdadadas
+			</span>
+			<br/>
+			<span class="product-type">
+				Type
+			</span>
+		</div>
+		<div class="product scanned">
+			<span class="product-name">
+				Nameasdasdadadas
+			</span>
+			<br/>
+			<span class="product-type">
+				Type
+			</span>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+ 	<script src="js/script.js"></script>
+</body>
+</html>
